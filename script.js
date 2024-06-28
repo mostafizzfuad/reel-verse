@@ -134,11 +134,11 @@ const moviesArr = [
             "https://www.torrentbd.com/posters/ug8FrB12ZEMw5AMZcIbaVAYY13070038.jpg",
     },
     {
-        title: "House of the Dragon",
+        title: "Revealer",
         year: 2022,
-        ticketPrice: 380,
+        ticketPrice: 300,
         posterURL:
-            "https://www.torrentbd.com/posters/oUw3f9JJagihLRybyY7P5wYY11198330.jpg",
+            "https://www.torrentbd.com/posters/b4mgPbm1On6r6lS5zfLowAYY14661252.jpg",
     },
     {
         title: "Attorney Woo",
@@ -374,6 +374,29 @@ function displayModal() {
                         <h3><strong>Subtotal:</strong> ${subtotal} ৳</h3>
                         <button class="btn btn-danger fw-bold mt-4 buy-now">Buy Now</button>
                     `;
+
+                    // Purchase Modal
+                    const buyNowBtn = document.querySelector(".buy-now");
+                    buyNowBtn.addEventListener("click", function () {
+                        modalWindow.style.opacity = 1;
+                        modalWindow.style.visibility = "visible";
+
+                        modalWindow.innerHTML = `
+                            <h3 class="fw-bold mt-3 text-success">${title} (${year}) Movie Ticket Successfully Purchase</h3>
+                            <h5><strong>Ticket Cost:</strong> ${price} ৳</h5>
+                            <h5><strong>Standered VAT:</strong> ${vat} ৳</h5>
+                            <h3><strong>Subtotal:</strong><span class="text-danger"> ${subtotal} ৳</h3>
+                            <h3><strong>Payment:</strong><span class="text-success"> ${subtotal} ৳ (Complete)</h3>
+                            <button class="btn btn-warning fw-bold mt-4 print-ticket">Print Ticket🖨</button>
+                        `;
+
+                        // Ticket Print Modal Close
+                        const printTicket = document.querySelector(".print-ticket");
+                        printTicket.addEventListener("click", function () {
+                            modalWindow.style.opacity = 0;
+                            modalWindow.style.visibility = "hidden";
+                        });
+                    });
 
                     // hiding the modal
                     const closeBtn = document.querySelector(".close-btn");
