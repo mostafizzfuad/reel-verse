@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reel Verse</title>
-    <!-- CSS only -->
+    <!--===== CSS only =====-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
-    <!-- custom css -->
+    <!--===== custom css =====-->
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <!--===== header start =====-->
     <header>
-        <!-- navbar -->
+        <!--===== navbar =====-->
         <nav class="navbar navbar-expand-lg position-fixed top-0 w-100">
             <div class="container">
                 <a class="navbar-brand h1 mb-0" href="#">Reel Verse</a>
@@ -45,7 +46,7 @@
                 </div>
             </div>
         </nav>
-        <!-- slider -->
+        <!--===== slider =====-->
         <div id="carouselExampleIndicators" class="carousel slide container" data-bs-ride="true">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -78,14 +79,63 @@
             </button>
         </div>
     </header>
+    <!--===== header end =====-->
 
+    <!--===== main start =====-->
+    <main>
+        <!--===== in cinemas now =====-->
+        <div class="container mt-5" id="in-cinema">
+            <h2 class="text-center mb-5">In Cinemas Now</h2>
+            <div class="row">
+                <div class="col">
+                    <img src="./img/in-cinemas.jpg" alt="Movie poster" class="w-100" />
+                </div>
+                <div class="col">
+                    <h3>Top Gun: Maverick (2022)</h3>
+                    <p>
+                        Top Gun: Maverick is a 2022 American action drama film directed by
+                        Joseph Kosinski. It is the sequel to the 1986 film Top Gun and the
+                        second installment in the Top Gun film series. Written by Ehren
+                        Kruger, Eric Warren Singer, and Christopher McQuarrie, the film is
+                        based on a story by Peter Craig and Justin Marks.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                        ipsa odio provident vel quo facilis impedit vitae rem eaque
+                        eligendi similique, nemo reprehenderit error iure animi natus
+                        doloribus ex a.
+                    </p>
+                    <p><strong>Release date:</strong> May 27, 2022 (USA)</p>
+                    <p><strong>Director:</strong> Joseph Kosinski</p>
+                    <p><strong>Box office:</strong> 1.355 billion USD</p>
+                    <p><strong>Budget:</strong> 170 million USD</p>
+                    <p><strong>Distributed by:</strong> Paramount Pictures</p>
+                    <p>
+                        <strong>Music by:</strong> Harold Faltermeyer; Lady Gaga; Hans
+                        Zimmer; Lorne Balfe
+                    </p>
+                    <hr />
+                    <h3 class="fw-bold mt-5 text-success">Running Successfully 🛩️</h3>
+                </div>
+            </div>
+        </div>
 
+        <!--===== trending now =====-->
+        <div class="container mt-5" id="trending">
+            <h2 class="text-center mb-5">Trending Now</h2>
+            <div class="movies row row-cols-1 row-cols-md-2 row-cols-lg-4 justify-content-center gap-3 mb-5">
+                <!-- movies goes here from js (display movies) -->
+            </div>
+        </div>
+        <!--===== modal window =====-->
+        <div class="conatainer modal-window w-100"></div>
+    </main>
     
-    <!-- JavaScript Bundle with Popper -->
+    <!--===== JavaScript Bundle with Popper =====-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
-    <!-- custom js -->
+    <!--===== custom js =====-->
     <script src="./script.js"></script>
 </body>
 </html>
